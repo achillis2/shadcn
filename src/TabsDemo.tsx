@@ -10,6 +10,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import TableDemo from "./TableDemo";
 
 export default function TabsDemo() {
   return (
@@ -66,18 +67,17 @@ export default function TabsDemo() {
         </Card>
       </TabsContent>
       <TabsContent value="onemore">
-        <Card>
+        <TableDemo />
+        {/* <Card>
           <CardHeader>
             <CardTitle>One more title</CardTitle>
             <CardDescription>Card description</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-2">
-            <div>Card content</div>
-          </CardContent>
+          <CardContent className="space-y-2"></CardContent>
           <CardFooter>
             <Button className="w-[100px] m-auto">Save</Button>
           </CardFooter>
-        </Card>
+        </Card> */}
       </TabsContent>
     </Tabs>
   );
