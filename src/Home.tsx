@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
+import TabsDemo from "./TabsDemo";
 
 export default function Home() {
   return (
     <div>
-      <Button>Click me</Button>
+      <TabsDemo />
+      {/* <Button>Click me</Button> */}
     </div>
   );
 }
